@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: #fff;
+}
+/* ul, ol {
+    list-style: none;
+}
+
+/* desde aquí el encabezado */ 
+
+#header {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    margin-right:auto;
+    background-color: #fff;
+}   
+    #head-izq{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    }
+        #head-izq #apellidos {
+        color: #376092;
+        font-size: 50px;
+        }
+        #head-izq #titulo {
+        justify-content:space-around;
+        font-size: 20px;
+        background-color:#376092;
+        border-radius: 10px;
+        color: aliceblue;
+        }
+
+    #head-der {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background-color: #376092;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 10%;
+    }
+    #header #head-der #header-text{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    #header-text p,a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    margin-bottom: 10px;
+    color: #ffff;
+    text-decoration: none;
+    margin-right: 40px
+    }
+    .uno1 {
+        display: flex;
+        justify-content: center;
+        align-content: end;
+        justify-self: end;
+    }
+    #header #fotokris {
+    border-radius: 50%;
+    align-items: baseline;
+    z-index: 1;
+    position: static;
+    }
+/* hasta aqu+i el encabezado */
+
+/* desde aqu+i el section */
+  
+section {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    /* DESDE aqu+i el lat-izq */ 
+    #lat-izq{
+        background-color:aliceblue; 
+        width: 25%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        border-color: #376092;
+    }
+    
+    #lat-izq div, h4, h2{
+        color: #000000;
+    }
+
+    .habilidades {
+        margin-left: 10px;
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 40px;
+        margin-top: 15px;
+    }
+    .skills-item {
+        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+        /* Idiomas */ 
+        .leng{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .menu{
+        position: relative;
+        border: 1px solid #376092;
+        border-radius: 20px;
+        }
+
+        .menu div{
+        position: relative;
+        width: 0;
+        height: 8px;
+        border-radius: 10px;
+        background-color: #376092;
+        }
+
+        #esp-mu{
+            animation: esp-barra 2s forwards;
+        }
+
+        @keyframes esp-barra{
+            100%{
+                width: 95%;
+            }
+        }
+
+        #eng-mu{
+            animation: eng-barra 2s forwards;
+        }
+
+        @keyframes eng-barra{
+            100%{
+                width: 50%;
+            }
+        }
+
+        /* Software*/ 
+
+        .soft{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .menu{
+        position: relative;
+        border: 1px solid #376092;
+        border-radius: 20px;
+        }
+
+        .menu div{
+        position: relative;
+        width: 0;
+        height: 8px;
+        border-radius: 10px;
+        background-color: #376092;
+        }
+
+        /*html*/
+        #html-mu{
+            animation: html-barra 2s forwards;
+        }
+
+        @keyframes html-barra{
+            100%{
+                width: 60%;
+            }
+        }
+        /*ms*/ 
+        #mso-mu{
+            animation: mso-barra 2s forwards;
+        }
+
+        @keyframes mso-barra{
+            100%{
+                width: 85%;
+            }
+        }
+        /*CSS*/ 
+        #CSS-mu{
+            animation: CSS-barra 2s forwards;
+        }
+
+        @keyframes CSS-barra{
+            100%{
+                width: 40%;
+            }
+        }
+        /*Javascript*/ 
+        #JS-mu{
+            animation: JS-barra 2s forwards;
+        }
+
+        @keyframes JS-barra{
+            100%{
+                width: 60%;
+            }
+        }
+
+        /*github*/ 
+        #git-mu{
+            animation: git-barra 2s forwards;
+        }
+
+        @keyframes git-barra{
+            100%{
+                width: 70%;
+            }
+        }
+
+        /* Habilidades blandas*/ 
+        .blandas{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .menu{
+        position: relative;
+        border: 1px solid #376092;
+        border-radius: 20px;
+        }
+
+        .menu div{
+        position: relative;
+        width: 0;
+        height: 8px;
+        border-radius: 10px;
+        background-color: #376092;
+        }
+        /* Analisis*/ 
+
+        #ana-mu{
+        animation: ana-barra 2s forwards;
+        }
+
+        @keyframes ana-barra{
+        100%{
+            width: 90%;
+        }
+        }
+
+        /* multitarea*/ 
+        #mult-mu{
+        animation: mult-barra 2s forwards;
+        }
+
+        @keyframes mult-barra{
+        100%{
+            width: 85%;
+        }
+        }
+        /* creatividad*/ 
+        #crea-mu{
+        animation: crea-barra 2s forwards;
+        }
+
+        @keyframes crea-barra{
+        100%{
+            width: 95%;
+        }
+        }
+        /* trabajo en equipo*/ 
+        #te-mu{
+        animation: te-barra 2s forwards;
+        }
+
+        @keyframes te-barra{
+        100%{
+            width: 80%;
+        }
+        }
+        /* comunicacion asertiva*/ 
+        #com-mu{
+        animation: com-barra 2s forwards;
+        }
+
+        @keyframes com-barra{
+        100%{
+            width: 85%;
+        }
+        }
+        /* resolucion de problemas*/ 
+        #res-mu{
+        animation: res-barra 2s forwards;
+        }
+
+        @keyframes res-barra{
+        100%{
+            width: 85%;
+        }
+        }
+
+/* hasta aqu+i el lat-izq */
+/* desde aqu+i el lat-der */
+
+
+#lat-der{
+    width: 75%;
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+#lat-der h2 {
+    background-color: #376092;
+    border-start-start-radius: 10px;
+    padding-left: 15px;
+    color: #fff;
+    border-end-end-radius: 10px;
+}
+
+.cards {
+    border-radius: 30%;
+}
+
+.cards p, li {
+    text-justify:auto;
+    margin: 15px;
+}
+
+/* hasta aqu+i el section */
+
+
+
+
+ 
+
+
